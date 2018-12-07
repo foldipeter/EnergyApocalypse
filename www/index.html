@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Energy apocalypse">
+    <meta name="keywords" content="energy apocalypse museum pedagogy learn lesson game">
+    <meta name="author" content="Földi Péter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Energy apocalypse</title>
+</head>
+<body onload="Start()">
+    <header>
+        <p class = "h1">Energia apokalipszis:</p>
+        <p class = "h2">A döntés a TE kezedben van!</p>
+        <p><canvas id="status" width="300" height="20"></canvas></p>
+        <p class = "days"><span id = "daynow"></span>. nap, összesen: <span id = "daycounter"></span>. Legjobb: <span id = "daybest"></span>.</p>
+    </header>
+    <section>
+        <article class = "main">
+            <img id = "pics" class = "picshidden">
+            <p id = "story" class = "text"></p>
+            <p id = "opt1" onclick="Next(this.id)" class = "opthidden"></p>
+            <p id = "opt2" onclick="Next(this.id)" class = "opthidden"></p>
+            <p id = "opt3" onclick="Next(this.id)" class = "opthidden"></p>
+            <p id = "opt4" onclick="Next(this.id)" class = "opthidden"></p>
+        </article>
+    </section>
+    <footer>
+        <p>Egy jövőbeli világ újonnan megválasztott vezetőjeként felelős döntéseket kell hoznod, hogy elkerüld az apokalipszist, azaz a világvégét. Négy mutatót kell szemmel tartanod a helyes választáshoz: környezet, energia, gazdaság, társadalom. Ahhoz, hogy elkerüld a világévégét mind a négy mutatót egyensúlyban kell tartanod. Ha bármelyik jelző eléri a minimum vagy a maximum értéket másnap véget ér a világ.</p>
+    </footer>
+</body>
+</html>
