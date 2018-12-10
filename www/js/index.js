@@ -74,7 +74,7 @@ function Draw() {
     ctx.fillText("Gazdaság", 187.25 , 14); 
     ctx.fillText("Társadalom", 261.75 , 14);
 
-    document.getElementById("story").innerHTML = Getname() + now.text;
+    document.getElementById("story").innerHTML = GetName() + now.text;
 
     document.getElementById("pics").src = now.pics;
 
