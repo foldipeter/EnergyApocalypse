@@ -338,7 +338,7 @@ function GetName() {
 }
 
 function FillStory(story) {
-    switch(Math.floor(Math.random() * (16 - 1 + 1) ) + 1) {
+    switch(Math.floor(Math.random() * (24 - 1 + 1) ) + 1) {
     case 1:
         now.text = "Támogasd kampányunkat, ami takarékosabb szemlélet felé tereli az embereket, hogy kevesebb energiát használjanak fel!";
         now.pics = "img/actactivist.jpg";
@@ -467,13 +467,77 @@ function FillStory(story) {
         now.opt2.text = "Nem fontos, az sem baj, ha idő sem jut a tanítására.";
         now.opt2.environment = "-";
         break;
+    case 17:
+        now.text = "A zöld jeles napokra kérem rendeljen el munkaszünetet!";
+        now.pics = "img/actactivist.jpg";
+        now.opt1.text = "Szó sem lehet róla ez túl nagy gazdasági kiesés!";
+        now.opt1.economy = "+";
+        now.opt2.text = "Rendben van, elrendelem!";
+        now.opt2.economy = "--";
+        break;
+    case 18:
+        now.text = "A szomszédos régióban növekszik a szegénység.";
+        now.pics = "img/actbusiness.jpg";
+        now.opt1.text = "Küldjünk anyagi támogatást feltétel nélkül!";
+        now.opt1.economy = "--";
+        now.opt2.text = "Kínáljunk kedvezményes hiteleket úgy, hogy nyerjünk rajta egy keveset!";
+        now.opt2.economy = "+";
+        break;
+    case 19:
+        now.text = "Elégedett a munkások teljesítményével? ";
+        now.pics = "img/actelectric.jpg";
+        now.opt1.text = "Igen, fizetésemelést is adok!";
+        now.opt1.economy = "-";
+        now.opt2.text = "Nem, csökkentem a bérüket!";
+        now.opt2.economy = "+";
+        break;
+    case 20:
+        now.text = "Elégedett a bányászok munkájával?";
+        now.pics = "img/actminer.jpg";
+        now.opt1.text = "Igen, fizetésemelést is adok!";
+        now.opt1.economy = "-";
+        now.opt2.text = "Nem, csökkentem a bérüket!";
+        now.opt2.economy = "+";
+        break;
+    case 21:
+        now.text = "Rengeteg szabadalom született, amivel hatékonyabbá lehetne tenni a termelést, nagyobb bevételt elérve.";
+        now.pics = "img/actscientist.jpg";
+        now.opt1.text = "Örülök neki azonnal használjuk is fel mindet!";
+        now.opt1.economy = "+++";
+        now.opt2.text = "Nincs baj az eddigi technológiákkal, semmi szükség rájuk!";
+        now.opt2.economy = "-";
+        break;
+    case 22:
+        now.text = "Egyre több önkéntes segíti a hadsereg munkáját!";
+        now.pics = "img/actsoldier.jpg";
+        now.opt1.text = "Mindig örülök, ha kevesebb pénzből több munkát végeznek az emberek!";
+        now.opt1.economy = "++";
+        now.opt2.text = "Tisztelem elhivatottságokat, de meg kell téríteni a költségeiket!";
+        now.opt2.economy = "-";
+        break;
+    case 23:
+        now.text = "Támogatást szeretnék kérni a következő turnémhoz!";
+        now.pics = "img/actstar.jpg";
+        now.opt1.text = "Finanszírozom a költségeidet!";
+        now.opt1.economy = "-";
+        now.opt2.text = "Nem áll túl jól a költségvetés, nem tudok támogatást adni!";
+        now.opt2.economy = "+";
+        break;
+    case 24:
+        now.text = "Tanítsunk pénzügyi ismeretet a gyerekeknek?";
+        now.pics = "img/actteacher.jpg";
+        now.opt1.text = "Igen, hiszen ez nagyon fontos az életben!";
+        now.opt1.economy = "+";
+        now.opt2.text = "Semmi szükség rá, így is le vannak terhelve a diákok!";
+        now.opt2.economy = "--";
+        break;
     case 0:
         now.text = "";
         now.pics = "";
         now.opt1.text = "";
-        now.opt1.environment = "";
+        now.opt1.economy = "";
         now.opt2.text = "";
-        now.opt2.environment = "";
+        now.opt2.economy = "";
         break;
     }
 }
