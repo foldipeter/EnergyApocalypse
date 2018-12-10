@@ -338,6 +338,7 @@ function GetName() {
 }
 
 function FillStory(story) {
+    now = new Story();
     switch(Math.floor(Math.random() * (24 - 1 + 1) ) + 1) {
     case 1:
         now.text = "Támogasd kampányunkat, ami takarékosabb szemlélet felé tereli az embereket, hogy kevesebb energiát használjanak fel!";
