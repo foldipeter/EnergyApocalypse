@@ -322,16 +322,16 @@ function HowMany(str, numb) {
 }
 
 function GetName() {
-    if ((environment > economy) && (environment > society) && (environment > energy)) {
+    if ((environment >= economy) && (environment >= society) && (environment >= energy)) {
         return "Zöld Vezető!</br>";
     } 
-    if ((energy > environment) && (energy > society) && (energy > economy)) {
+    if ((energy >= environment) && (energy >= society) && (energy >= economy)) {
         return "Energikus Vezető!</br>";
     }
-    if ((economy > environment) && (economy > energy) && (economy > society)) {
+    if ((economy >= environment) && (economy >= energy) && (economy >= society)) {
         return "Gazdag Vezető!</br>";
     }
-    if ((society > energy) && (society > environment) && (society > economy)) {
+    if ((society >= energy) && (society >= environment) && (society >= economy)) {
         return "Kedves Vezető!</br>"
     }
     return "Kiegyensúlyozott Vezető!</br>";  
@@ -343,65 +343,65 @@ function FillStory(story) {
         now.text = "Támogasd kampányunkat, ami takarékosabb szemlélet felé tereli az embereket, hogy kevesebb energiát használjanak fel!";
         now.pics = "img/actactivist.jpg";
         now.opt1.text = "Igen, támogatom!";
-        now.opt1.environment = "+";
+        now.opt1.energy = "+";
         now.opt2.text = "Nem támogatom!";
-        now.opt2.environment = "--";
+        now.opt2.energy = "--";
         break;
     case 2:
         now.text = "Az egyik régióban energiahiány alakult ki. Lehetőségünk van segíteni rajtunk, mit tegyünk?";
         now.pics = "img/actbusiness.jpg";
         now.opt1.text = "Osszuk meg energiakészleteinket! ";
-        now.opt1.environment = "-";
+        now.opt1.energy = "-";
         now.opt2.text = "Nem segítünk nekik! ";
-        now.opt2.environment = "+";
+        now.opt2.energy = "+";
         break;
     case 3:
         now.text = "Egy újonnan épített szélerőmű tesztelési időszaka lejárt. Nem találtunk hibát szóval csatlakoztassuk a hálózatra?";
         now.pics = "img/actelectric.jpg";
         now.opt1.text = "Igen.";
-        now.opt1.environment = "++";
+        now.opt1.energy = "++";
         now.opt2.text = "Nem.";
-        now.opt2.environment = "-";
+        now.opt2.energy = "-";
         break;
     case 4:
         now.text = "A bányászok panaszkodnak a világítás milyenségére. Használjunk erősebb fényű izzókat a bányajáratokban?";
         now.pics = "img/actminer.jpg";
         now.opt1.text = "Igen!";
-        now.opt1.environment = "-";
+        now.opt1.energy = "-";
         now.opt2.text = "Nem!";
-        now.opt2.environment = "+";
+        now.opt2.energy = "+";
         break;
     case 5:
         now.text = "Egy nagyszabású kutatási projekthez rengeteg áramra lenne szükségünk. Engedélyezze, hogy nagyteljesítményű gépeket használhassunk!";
         now.pics = "img/actscientist.jpg";
         now.opt1.text = "Engedélyezem!";
-        now.opt1.environment = "---";
+        now.opt1.energy = "---";
         now.opt2.text = "Szó sem lehet róla, takarékoskodjanak az energiával!";
-        now.opt2.environment = "-";
+        now.opt2.energy = "-";
         break;
     case 6:
         now.text = "Az egyik védelmi bunker raktárjában találtunk több száz hordó üzemanyagot. Mihez kezdjünk vele?";
         now.pics = "img/actsoldier.jpg";
         now.opt1.text = "Használja a katonaság!";
-        now.opt1.environment = "-";
+        now.opt1.energy = "-";
         now.opt2.text = "Az embereknek szükségük van rá, vigyék az üzemanyagtöltő állomásokra!";
-        now.opt2.environment = "+++";
+        now.opt2.energy = "+++";
         break;
     case 7:
         now.text = "Rajongóim követik életem minden pillanatát, milyen példát mutassak nekik takarékosság terén?";
         now.pics = "img/actstar.jpg";
         now.opt1.text = "Az energiával spórolni kell!";
-        now.opt1.environment = "++";
+        now.opt1.energy = "++";
         now.opt2.text = "Rengeteg energiánk van, bátran mutassuk meg milyen gazdagok vagyunk!";
-        now.opt2.environment = "-";
+        now.opt2.energy = "-";
         break;
     case 8:
         now.text = "Tanulóim saját projektet kezdenek, aminek célja, hogy rávegyék az embereket az energiával való takarékosságra.";
         now.pics = "img/actteacher.jpg";
         now.opt1.text = "Ellátogatok hozzájuk, hogy személyesen köszönjem meg nekik!";
-        now.opt1.environment = "++";
+        now.opt1.energy = "++";
         now.opt2.text = "Nem látom értelmét, inkább a tananyaggal foglalkozzanak!";
-        now.opt2.environment = "-";
+        now.opt2.energy = "-";
         break;
     case 0:
         now.text = "";
