@@ -291,10 +291,10 @@ function HowMany(str, numb) {
             return numb + 3;
             break;
         case "++":
-            return numb + 6;
+            return numb + 9;
             break;
         case "+++":
-            return numb + 16;
+            return numb + 27;
             break;
         case "++++":
             return numb + 40;
@@ -306,10 +306,10 @@ function HowMany(str, numb) {
             return numb - 3;
             break;
         case "--":
-            return numb - 6;
+            return numb - 9;
             break;
         case "---":
-            return numb - 16;
+            return numb - 27;
             break;
         case "----":
             return numb - 40;
@@ -339,7 +339,7 @@ function GetName() {
 
 function FillStory(story) {
     now = new Story();
-    switch(Math.floor(Math.random() * (40 - 1 + 1) ) + 1) {
+    switch(Math.floor(Math.random() * (48 - 1 + 1) ) + 1) {
     case 1:
         now.text = "Támogasd kampányunkat, ami takarékosabb szemlélet felé tereli az embereket, hogy kevesebb energiát használjanak fel!";
         now.pics = "img/actactivist.jpg";
@@ -676,15 +676,95 @@ function FillStory(story) {
         now.opt2.energy = "++";
         now.opt2.environment = "--";
         break;
+    case 41:
+        now.text = "Az ipar fogyasztja a legtöbb energiát érdemes lenne korlátozni.";
+        now.pics = "img/actactivist.jpg";
+        now.opt1.text = "Egyetértek, korlátozni fogom az ipari energiafelhasználást!";
+        now.opt1.energy = "+";
+        now.opt1.economy = "--";
+        now.opt2.text = "Szó sem lehet róla. Az ipar a gazdaság mozgatója!";
+        now.opt2.energy = "-";
+        now.opt2.economy = "+";
+        break;
+    case 42:
+        now.text = "Az energiapiaci jelenlétünk erős. Milyen tranzakciót bonyolítsunk?";
+        now.pics = "img/actbusiness.jpg";
+        now.opt1.text = "Vásároljunk energiát.";
+        now.opt1.energy = "++";
+        now.opt1.economy = "-";
+        now.opt2.text = "Adjuk el energiát.";
+        now.opt2.energy = "--";
+        now.opt2.economy = "+";
+        break;
+    case 43:
+        now.text = "Az erőművek karbantartási időszaka közeledik.";
+        now.pics = "img/actelectric.jpg";
+        now.opt1.text = "Alaposan nézzék át és gondosan javítsák ki a hibákat kerül, amibe kerül!";
+        now.opt1.energy = "+";
+        now.opt1.economy = "-";
+        now.opt2.text = "Csak a legszükségesebb dolgokat javítsák, spóroljanak a forrásokkal!";
+        now.opt2.energy = "-";
+        now.opt2.economy = "++";
+        break;
+    case 44:
+        now.text = "A bányászok nagyobb fizetést szeretnének!";
+        now.pics = "img/actminer.jpg";
+        now.opt1.text = "Rendben, emelem a bérüket!";
+        now.opt1.energy = "+";
+        now.opt1.economy = "-";
+        now.opt2.text = "Nem fogok több pénzt adni nekik!";
+        now.opt2.energy = "--";
+        now.opt2.economy = "+";
+        break;
+    case 45:
+        now.text = "Van egy lehetséges új kutatási irány a Nap fényének elektromos árammá alakításában. Nagyon költséges fejlesztés, de hatékonyan termelne áramot.";
+        now.pics = "img/actscientist.jpg";
+        now.opt1.text = "Bízom Önben, vágjon bele!";
+        now.opt1.energy = "++";
+        now.opt1.economy = "---";
+        now.opt2.text = "Nincs most erre forrásunk!";
+        now.opt2.energy = "-";
+        now.opt2.economy = "+";
+        break;
+    case 46:
+        now.text = "A hadsereg üzemanyagkészletei eléggé szegényesek, kérem gondoskodjon az utánpótlásról!";
+        now.pics = "img/actsoldier.jpg";
+        now.opt1.text = "Vásároljanak üzemanyagot! ";
+        now.opt1.energy = "+";
+        now.opt1.economy = "-";
+        now.opt2.text = "Ez nem a legmegfelelőbb pillanat, semmi forrás sincs rá!";
+        now.opt2.energy = "+";
+        now.opt2.economy = "--";
+        break;
+    case 47:
+        now.text = "Segítsen, hogy új energiatakarékos izzókat tudjunk venni a színpadi reflektorokhoz!";
+        now.pics = "img/actstar.jpg";
+        now.opt1.text = "Rendben, vegyétek meg!";
+        now.opt1.energy = "++";
+        now.opt1.economy = "-";
+        now.opt2.text = "Szó sem lehet róla!";
+        now.opt2.energy = "-";
+        now.opt2.economy = "++";
+        break;
+    case 48:
+        now.text = "A tanulók kiváló ötletekkel álnak elő az energiaszektor megreformáláshoz, szerintem gazdaságilag is megtérülő projektekről van szó.";
+        now.pics = "img/actteacher.jpg";
+        now.opt1.text = "Mindenben támogatom, hogy ezek az ötletek megvalósulhassanak!";
+        now.opt1.energy = "++";
+        now.opt1.economy = "++";
+        now.opt2.text = "Kétlem, hogy értene hozzá, hogy ezt megítélje, inkább csak tanítson tovább!";
+        now.opt2.energy = "--";
+        now.opt2.economy = "-";
+        break;
     case 0:
         now.text = "";
         now.pics = "";
         now.opt1.text = "";
         now.opt1.energy = "";
-        now.opt1.environment = "";
+        now.opt1.economy = "";
         now.opt2.text = "";
         now.opt2.energy = "";
-        now.opt2.environment = "";
+        now.opt2.economy = "";
         break;
     }
 }
