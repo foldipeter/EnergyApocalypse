@@ -338,7 +338,7 @@ function GetName() {
 }
 
 function FillStory(story) {
-    switch(Math.floor(Math.random() * (8 - 1 + 1) ) + 1) {
+    switch(Math.floor(Math.random() * (16 - 1 + 1) ) + 1) {
     case 1:
         now.text = "Támogasd kampányunkat, ami takarékosabb szemlélet felé tereli az embereket, hogy kevesebb energiát használjanak fel!";
         now.pics = "img/actactivist.jpg";
