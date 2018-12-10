@@ -339,7 +339,7 @@ function GetName() {
 
 function FillStory(story) {
     now = new Story();
-    switch(Math.floor(Math.random() * (24 - 1 + 1) ) + 1) {
+    switch(Math.floor(Math.random() * (32 - 1 + 1) ) + 1) {
     case 1:
         now.text = "Támogasd kampányunkat, ami takarékosabb szemlélet felé tereli az embereket, hogy kevesebb energiát használjanak fel!";
         now.pics = "img/actactivist.jpg";
@@ -533,68 +533,68 @@ function FillStory(story) {
         now.opt2.economy = "--";
         break;
     case 25:
-        now.text = "";
-        now.pics = "";
-        now.opt1.text = "";
-        now.opt1.society = "";
-        now.opt2.text = "";
-        now.opt2.society = "";
+        now.text = "Mutassa meg az embereknek, hogy mennyire fontosnak tartja a véleményüket!";
+        now.pics = "img/actactivist.jpg";
+        now.opt1.text = "Hazugság lenne, nem érdekel a véleményük!";
+        now.opt1.society = "-";
+        now.opt2.text = "Köszönöm a tanácsot, elfogadom!";
+        now.opt2.society = ""+;
         break;
     case 26:
-        now.text = "";
-        now.pics = "";
-        now.opt1.text = "";
-        now.opt1.society = "";
-        now.opt2.text = "";
-        now.opt2.society = "";
+        now.text = "Elkészültek az éves pénzügyi jelentések, szeretné, hogy bárki számára elérhetőek legyenek?";
+        now.pics = "img/actbusiness.jpg";
+        now.opt1.text = "Nem, semmi szükség rá, hogy mindenki elolvassa!";
+        now.opt1.society = "--";
+        now.opt2.text = "Igen, nincs mit titkolnom az emberek előtt!";
+        now.opt2.society = "+";
         break;
     case 27:
-        now.text = "";
-        now.pics = "";
-        now.opt1.text = "";
-        now.opt1.society = "";
-        now.opt2.text = "";
-        now.opt2.society = "";
+        now.text = "Nemsokára felépül az új erőmű, hogyan fogja kiválasztani a leendő igazgatót?";
+        now.pics = "img/actelectric.jpg";
+        now.opt1.text = "Személyesen fogok dönteni róla.";
+        now.opt1.society = "-";
+        now.opt2.text = "Egy bizottság fog szakmai alapon döntést hozni.";
+        now.opt2.society = "+";
         break;
     case 28:
-        now.text = "";
-        now.pics = "";
-        now.opt1.text = "";
-        now.opt1.society = "";
-        now.opt2.text = "";
-        now.opt2.society = "";
+        now.text = "Az előző bányamérnök hamarosan nyugdíjba megy, újat kell választani.";
+        now.pics = "img/actminer.jpg";
+        now.opt1.text = "Kizárólag szakmai alapon történhet a kiválasztás.";
+        now.opt1.society = "+";
+        now.opt2.text = "Személyesen fogok dönteni az új vezető személyéről.";
+        now.opt2.society = "-";
         break;
     case 29:
-        now.text = "";
-        now.pics = "";
-        now.opt1.text = "";
-        now.opt1.society = "";
-        now.opt2.text = "";
-        now.opt2.society = "";
+        now.text = "Szükségesnek látja, hogy a legújabb kutatási eredmények mindenki számára elérhetőek legyenek?";
+        now.pics = "img/actscientist.jpg";
+        now.opt1.text = "Igen, fontos az átláthatóság!";
+        now.opt1.society = "+";
+        now.opt2.text = "Nem, semmi szükség sincs rá!";
+        now.opt2.society = "-";
         break;
     case 30:
-        now.text = "";
-        now.pics = "";
-        now.opt1.text = "";
-        now.opt1.society = "";
-        now.opt2.text = "";
-        now.opt2.society = "";
+        now.text = "Tartsunk felvonulást a következő nemzeti ünnepnapon?";
+        now.pics = "img/actsoldier.jpg";
+        now.opt1.text = "Igen.";
+        now.opt1.society = "-";
+        now.opt2.text = "Nem.";
+        now.opt2.society = "+";
         break;
     case 31:
-        now.text = "";
-        now.pics = "";
-        now.opt1.text = "";
-        now.opt1.society = "";
-        now.opt2.text = "";
-        now.opt2.society = "";
+        now.text = "Remélem nem késtem, ekkora beszéltünk meg találkozót? Miben segíthetek?";
+        now.pics = "img/actstar.jpg";
+        now.opt1.text = "Szeretném, ha a következő fellépésére eltenne pár jegyet nekem és barátaimnak.";
+        now.opt1.society = "-";
+        now.opt2.text = "Szeretném, ha a következő fellépése előtt ajándékjegyeket sorsolna ki.";
+        now.opt2.society = "+";
         break;
     case 32:
-        now.text = "";
-        now.pics = "";
-        now.opt1.text = "";
-        now.opt1.society = "";
-        now.opt2.text = "";
-        now.opt2.society = "";
+        now.text = "A szülők mostanában dühösek, amiért túl sok a házi feladat.";
+        now.pics = "img/actteacher.jpg";
+        now.opt1.text = "Adjon akkor kevesebb feladatot!";
+        now.opt1.society = "+";
+        now.opt2.text = "Majd én beszélek velük, inkább tanuljanak együtt a gyerekeikkel!";
+        now.opt2.society = "-";
         break;
     case 0:
         now.text = "";
@@ -606,4 +606,3 @@ function FillStory(story) {
         break;
     }
 }
-
