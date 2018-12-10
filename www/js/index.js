@@ -403,6 +403,70 @@ function FillStory(story) {
         now.opt2.text = "Nem látom értelmét, inkább a tananyaggal foglalkozzanak!";
         now.opt2.energy = "-";
         break;
+    case 9:
+        now.text = "Földünk tele van csodás értékekkel, amit meg kell védeni. Egyetért ezzel?";
+        now.pics = "img/actactivist.jpg";
+        now.opt1.text = "Igen, az embereknek nagyobb figyelmet kell fordítania a környezet védelmére!";
+        now.opt1.environment = "+";
+        now.opt2.text = "Igen, de azért még is csak azért vannak ezek a kincsek, hogy az emberek kényelmét szolgálják!";
+        now.opt2.environment = "-";
+        break;
+    case 10:
+        now.text = "Az irodákból lassan elfogy az összes fénymásolópapír, milyen fajtát vegyünk?";
+        now.pics = "img/actbusiness.jpg";
+        now.opt1.text = "Újrahasznosított papírból készültet, nem baj, ha kicsit szürkés hiszen védenünk kell a környezetet!";
+        now.opt1.environment = "+";
+        now.opt2.text = "Hófehér ragyogó papírra kell nyomtatnunk, ahogy eddig is tettük!";
+        now.opt2.environment = "-";
+        break;
+    case 11:
+        now.text = "A különböző elektromos energiát szolgáltató cégek szeretnének pozitív kiváltságokat kapni. Milyen szempont szerint kedvezzünk nekik?";
+        now.pics = "img/actelectric.jpg";
+        now.opt1.text = "Támogassuk azokat, akik környezetbarát megoldásokat használnak.";
+        now.opt1.environment = "+";
+        now.opt2.text = "Támogassuk azokat, akikre nem hatnak a környezetvédő vészmadarak károgásai!";
+        now.opt2.environment = "--";
+        break;
+    case 12:
+        now.text = "A bányászat során rengeteg olyan anyag keletkezik, amire semmi szükségünk sincs. Mihez kezdjük vele?";
+        now.pics = "img/actminer.jpg";
+        now.opt1.text = "Alapos mérnöki munkát igényel, annak megtervezése, hol lehetne tárolni!";
+        now.opt1.environment = "+";
+        now.opt2.text = "Nem számít mennyire káros, egyszerűen építsetek belőle hatalmas halmokat a bányák közelébe.";
+        now.opt2.environment = "---";
+        break;
+    case 13:
+        now.text = "Az ember környezetátalakító tevékenysége egyre fokozódik derül ki egy új kutatásból.";
+        now.pics = "img/actscientist.jpg";
+        now.opt1.text = "Több ilyen kutatásra van szükségünk, hogy megvédjük a Földet.";
+        now.opt1.environment = "++";
+        now.opt2.text = "Semmi szükség ezekre a kutatásokra!";
+        now.opt2.environment = "-";
+        break;
+    case 14:
+        now.text = "A következő hadgyakorlat helyszíne egyben egy veszélyeztetett állat egyetlen természetes élőhelye. Engedélyt kérek a gyakorlat megtartására!";
+        now.pics = "img/actsoldier.jpg";
+        now.opt1.text = "Engedélyt megadom!";
+        now.opt1.environment = "--";
+        now.opt2.text = "Nem engedélyezem! Keressenek másik helyszínt!";
+        now.opt2.environment = "+";
+        break;
+    case 15:
+        now.text = "Rajongóim számára szeretnék kedveskedni ajándékokkal, van ötleted mi legyen az?";
+        now.pics = "img/actstar.jpg";
+        now.opt1.text = "A nevükben fogadj örökbe veszélyeztett állatokat vagy tisztíts meg szennyezett területeket!";
+        now.opt1.environment = "++";
+        now.opt2.text = "Műanyagból készült aranyos és vicces állatok tuti siker lesz!";
+        now.opt2.environment = "-";
+        break;
+    case 16:
+        now.text = "A környezetvédelem mennyire hangsúlyos szerepben kerüljön a tantervekbe?";
+        now.pics = "img/actteacher.jpg";
+        now.opt1.text = "A lehető legfontosabb helyet kapja meg!";
+        now.opt1.environment = "+++";
+        now.opt2.text = "Nem fontos, az sem baj, ha idő sem jut a tanítására.";
+        now.opt2.environment = "-";
+        break;
     case 0:
         now.text = "";
         now.pics = "";
