@@ -339,7 +339,7 @@ function GetName() {
 
 function FillStory(story) {
     now = new Story();
-    switch(Math.floor(Math.random() * (32 - 1 + 1) ) + 1) {
+    switch(Math.floor(Math.random() * (40 - 1 + 1) ) + 1) {
     case 1:
         now.text = "Támogasd kampányunkat, ami takarékosabb szemlélet felé tereli az embereket, hogy kevesebb energiát használjanak fel!";
         now.pics = "img/actactivist.jpg";
@@ -596,13 +596,95 @@ function FillStory(story) {
         now.opt2.text = "Majd én beszélek velük, inkább tanuljanak együtt a gyerekeikkel!";
         now.opt2.society = "-";
         break;
+    case 33:
+        now.text = "Mit szólna hozzá, ha támogatná azokat a sofőröket, akik elektromos meghajtású autót vezetnek?";
+        now.pics = "img/actactivist.jpg";
+        now.opt1.text = "Kiváló ötlet, ingyen adok nekik energiát!";
+        now.opt1.energy = "-";
+        now.opt1.environment = "++";
+        now.opt2.text = "Nem igazán tetszik az ötlet, nem kivételezek senkivel.";
+        now.opt2.energy = "+";
+        now.opt2.environment = "--";
+        break;
+    case 34:
+        now.text = "Közeledik a tél és nagyon hideg időjárást jeleznek a szakemberek. Az erdők egy részében engedélyezni kéne, hogy több fát vághassanak ki.";
+        now.pics = "img/actbusiness.jpg";
+        now.opt1.text = "Köszönöm, hogy figyelmeztetett! Azonnal engedélyezem!";
+        now.opt1.energy = "+";
+        now.opt1.environment = "--";
+        now.opt2.text = "Nem tehetem, szó sem lehet róla!";
+        now.opt2.energy = "--";
+        now.opt2.environment = "+";
+        break;
+    case 35:
+        now.text = "Több áramot kell előállítanunk ha fedezni akarjuk a lakosság igényét!";
+        now.pics = "img/actelectric.jpg";
+        now.opt1.text = "Növeljük fejlesztéssel a meglévő szénerőművek teljesítményét.";
+        now.opt1.energy = "+";
+        now.opt1.environment = "--";
+        now.opt2.text = "Telepítsünk több szélturbinát és vegyük rá a fogyasztókat a takarékosságra.";
+        now.opt2.energy = "-";
+        now.opt2.environment = "++";
+        break;
+    case 36:
+        now.text = "Felfedeztünk egy nagyobb kőolajmezőt, azonban egy természetvédelmi területen kellene kitermelni.";
+        now.pics = "img/actminer.jpg";
+        now.opt1.text = "Ne foglalkozz a védett területtel, az energia sokkal fontosabb!";
+        now.opt1.energy = "++";
+        now.opt1.environment = "--";
+        now.opt2.text = "Micsoda átkozott balszerencse, így nem tudjuk kitermelni.";
+        now.opt2.energy = "-";
+        now.opt2.environment = "+";
+        break;
+    case 37:
+        now.text = "Egy komoly kutatás kapcsán zavarnám meg: szükségünk van nagyobb mennyiségű energiára, hogy fúziós erőmű kutatásunkat folytathassuk, ha sikerrel járunk óriási áttörést érünk el!";
+        now.pics = "img/actscientist.jpg";
+        now.opt1.text = "Használják, amit csak szeretnének!";
+        now.opt1.energy = "---";
+        now.opt1.environment = "++";
+        now.opt2.text = "Szó sem lehet róla!";
+        now.opt2.energy = "+";
+        now.opt2.environment = "-";
+        break;
+    case 38:
+        now.text = "A katonák panaszkodnak, hogy túlságosan hideg van az őrbódékban.";
+        now.pics = "img/actsoldier.jpg";
+        now.opt1.text = "Vágják ki a környékbeli fákat és fűtsenek azokkal.";
+        now.opt1.energy = "+";
+        now.opt1.environment = "--";
+        now.opt2.text = "Csatlakozzanak rá a városi gázvezetékekre és oldják meg a fűtést!";
+        now.opt2.energy = "-";
+        now.opt2.environment = "+";
+        break;
+    case 39:
+        now.text = "A következő turnénkon milyen üzenetet közvetítsünk?";
+        now.pics = "img/actstar.jpg";
+        now.opt1.text = "Mondják el mindenkinek milyen sikeresek vagyunk és éljenek a mának!";
+        now.opt1.energy = "-";
+        now.opt1.environment = "-";
+        now.opt2.text = "Motiválják az embereket az energiafogyasztás mérséklésére.";
+        now.opt2.energy = "++";
+        now.opt2.environment = "++";
+        break;
+    case 40:
+        now.text = "Elkészült a legújabb tanterv, áttekinti?";
+        now.pics = "img/actteacher.jpg";
+        now.opt1.text = "Túl nagy szerepet kap benne az energia és a környezet kérdése.";
+        now.opt1.energy = "-";
+        now.opt1.environment = "-";
+        now.opt2.text = "Nem kap elég figyelmet az energia és környezet jelentősége!";
+        now.opt2.energy = "++";
+        now.opt2.environment = "--";
+        break;
     case 0:
         now.text = "";
         now.pics = "";
         now.opt1.text = "";
-        now.opt1.society = "";
+        now.opt1.energy = "";
+        now.opt1.environment = "";
         now.opt2.text = "";
-        now.opt2.society = "";
+        now.opt2.energy = "";
+        now.opt2.environment = "";
         break;
     }
 }

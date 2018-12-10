@@ -52,14 +52,19 @@
      display: none;
  }
  .pics {
-     width: 66%;
+     width: 80%;
      height: auto;
      margin-left: auto;
      margin-right: auto;
-     padding: 10px 0px 10px 0px;
+     box-shadow: 10px 10px gray;
      display: block;
      border-radius: 25px;
-
+     border: 2px solid;
+ }
+ .img {
+    background-color: #EAFDC5;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
  }
  .text {
      background-color: #EAFDC5;
