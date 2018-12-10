@@ -538,7 +538,7 @@ function FillStory(story) {
         now.opt1.text = "Hazugság lenne, nem érdekel a véleményük!";
         now.opt1.society = "-";
         now.opt2.text = "Köszönöm a tanácsot, elfogadom!";
-        now.opt2.society = ""+;
+        now.opt2.society = "+";
         break;
     case 26:
         now.text = "Elkészültek az éves pénzügyi jelentések, szeretné, hogy bárki számára elérhetőek legyenek?";
