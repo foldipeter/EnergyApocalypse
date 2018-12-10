@@ -532,13 +532,77 @@ function FillStory(story) {
         now.opt2.text = "Semmi szükség rá, így is le vannak terhelve a diákok!";
         now.opt2.economy = "--";
         break;
+    case 25:
+        now.text = "";
+        now.pics = "";
+        now.opt1.text = "";
+        now.opt1.society = "";
+        now.opt2.text = "";
+        now.opt2.society = "";
+        break;
+    case 26:
+        now.text = "";
+        now.pics = "";
+        now.opt1.text = "";
+        now.opt1.society = "";
+        now.opt2.text = "";
+        now.opt2.society = "";
+        break;
+    case 27:
+        now.text = "";
+        now.pics = "";
+        now.opt1.text = "";
+        now.opt1.society = "";
+        now.opt2.text = "";
+        now.opt2.society = "";
+        break;
+    case 28:
+        now.text = "";
+        now.pics = "";
+        now.opt1.text = "";
+        now.opt1.society = "";
+        now.opt2.text = "";
+        now.opt2.society = "";
+        break;
+    case 29:
+        now.text = "";
+        now.pics = "";
+        now.opt1.text = "";
+        now.opt1.society = "";
+        now.opt2.text = "";
+        now.opt2.society = "";
+        break;
+    case 30:
+        now.text = "";
+        now.pics = "";
+        now.opt1.text = "";
+        now.opt1.society = "";
+        now.opt2.text = "";
+        now.opt2.society = "";
+        break;
+    case 31:
+        now.text = "";
+        now.pics = "";
+        now.opt1.text = "";
+        now.opt1.society = "";
+        now.opt2.text = "";
+        now.opt2.society = "";
+        break;
+    case 32:
+        now.text = "";
+        now.pics = "";
+        now.opt1.text = "";
+        now.opt1.society = "";
+        now.opt2.text = "";
+        now.opt2.society = "";
+        break;
     case 0:
         now.text = "";
         now.pics = "";
         now.opt1.text = "";
-        now.opt1.economy = "";
+        now.opt1.society = "";
         now.opt2.text = "";
-        now.opt2.economy = "";
+        now.opt2.society = "";
         break;
     }
 }
