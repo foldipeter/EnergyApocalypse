@@ -288,31 +288,31 @@ function HowMany(str, numb) {
             return 50;
             break; 
         case "+":
-            return numb + 3;
+            return numb + 4;
             break;
         case "++":
-            return numb + 9;
+            return numb + 16;
             break;
         case "+++":
-            return numb + 27;
+            return numb + 32;
             break;
         case "++++":
-            return numb + 40;
+            return numb + 50;
             break;
         case "+++++":
             return numb + 100;
             break;    
         case "-":
-            return numb - 3;
+            return numb - 4;
             break;
         case "--":
-            return numb - 9;
+            return numb - 16;
             break;
         case "---":
-            return numb - 27;
+            return numb - 32;
             break;
         case "----":
-            return numb - 40;
+            return numb - 50;
             break;
         case "-----":
             return numb - 100;
