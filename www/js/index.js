@@ -756,15 +756,95 @@ function FillStory(story) {
         now.opt2.energy = "--";
         now.opt2.economy = "-";
         break;
+    case 49:
+        now.text = "Mit szólna ahhoz, hogyha lenne minden évben egy óra, amikor minden eszközt még a világítást is lekapcsolunk? És a lehető legkevesebb energiát használjuk el?";
+        now.pics = "img/actactivist.jpg";
+        now.opt1.text = "Nagyon jó ötletnek tartom!";
+        now.opt1.energy = "++";
+        now.opt1.society = "-";
+        now.opt2.text = "Nem tetszik az ötlet!";
+        now.opt2.energy = "-";
+        now.opt2.society = "++";
+        break;
+    case 50:
+        now.text = "Közeledik a tél és vannak olyan háztartások, ahol nem tudják a fűtést megoldani.";
+        now.pics = "img/actbusiness.jpg";
+        now.opt1.text = "Támogatnunk kell őket tüzelőanyaggal!";
+        now.opt1.energy = "--";
+        now.opt1.society = "+";
+        now.opt2.text = "Nem tudunk mindenkit megvédeni.";
+        now.opt2.energy = "+";
+        now.opt2.society = "--";
+        break;
+    case 51:
+        now.text = "Hatalmas vihar pusztított, sok időre lesz szükség mindent megjavítani!";
+        now.pics = "img/actelectric.jpg";
+        now.opt1.text = "Az én házamnál kell kezdeniük!";
+        now.opt1.energy = "-";
+        now.opt1.society = "-";
+        now.opt2.text = "Szakértelmére bízom, hogyan halad a munkálatokkal!";
+        now.opt2.energy = "+";
+        now.opt2.society = "+";
+        break;
+    case 52:
+        now.text = "A bezárt bányakat hogyan hasznosítsuk?";
+        now.pics = "img/actminer.jpg";
+        now.opt1.text = "Készüljön földalatti kiállítóhely!";
+        now.opt1.energy = "++";
+        now.opt1.society = "+";
+        now.opt2.text = "Tömjék tele a járatokat, amivel akarják!";
+        now.opt2.energy = "-";
+        now.opt2.society = "-";
+        break;
+    case 53:
+        now.text = "Az emberiség élelmezése veszélybe kerülhet, ha mindenhol ugyan azokat a növényeket termesztik!";
+        now.pics = "img/actscientist.jpg";
+        now.opt1.text = "Csak így tudunk elég élelmiszert termelni!";
+        now.opt1.energy = "+";
+        now.opt1.society = "--";
+        now.opt2.text = "Szükség van arra, hogy többféle növényt termeljünk!";
+        now.opt2.energy = "-";
+        now.opt2.society = "+";
+        break;
+    case 54:
+        now.text = "Lázadás tört ki a szomszédos régióban, amiért elzárta a gázvezetékeket!";
+        now.pics = "img/actsoldier.jpg";
+        now.opt1.text = "Azonnal nyissuk meg a vezetékeket!";
+        now.opt1.energy = "--";
+        now.opt1.society = "+";
+        now.opt2.text = "Vonuljanak fel nagyobb haderővel!";
+        now.opt2.energy = "+";
+        now.opt2.society = "--";
+        break;
+    case 55:
+        now.text = "Kiválóan érzem itt magam, hiszen egyre több és több szórakozóhely, vidámpark nyílik, a város fényei beterítik az egész környéket!";
+        now.pics = "img/actstar.jpg";
+        now.opt1.text = "Korlátozni kell ezt a nagy energiapazarlást!";
+        now.opt1.energy = "+";
+        now.opt1.society = "--";
+        now.opt2.text = "Csodálatos! Hiszen ebből is látszik milyen hatalmasok vagyunk!";
+        now.opt2.energy = "--";
+        now.opt2.society = "+";
+        break;
+    case 56:
+        now.text = "Az iskolák, múzeumok könyvtárak és más hasonló intézményeknek biztosítson ingyen energiát!";
+        now.pics = "img/actteacher.jpg";
+        now.opt1.text = "Nem tehetem!";
+        now.opt1.energy = "+";
+        now.opt1.society = "-";
+        now.opt2.text = "Rendben van!";
+        now.opt2.energy = "-";
+        now.opt2.society = "+";
+        break;
     case 0:
         now.text = "";
         now.pics = "";
         now.opt1.text = "";
         now.opt1.energy = "";
-        now.opt1.economy = "";
+        now.opt1.society = "";
         now.opt2.text = "";
         now.opt2.energy = "";
-        now.opt2.economy = "";
+        now.opt2.society = "";
         break;
     }
 }
